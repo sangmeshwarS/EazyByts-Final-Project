@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="base.html :: main(~{:: div})">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="row mt-3">
+<div class="col-md-6 m-auto">
+<div class="card">
+<div class="card-header">
+<h2>Body Mass Index(BMI)</h2>
+</div>
+<div class="card-body">
+<form th:action="@{/processProfile}" method="post">
+	<div class="form-group">
+    <label for="exampleInputEmail1">Weight</label>
+    <input type="number" name="weight" class="form-control" placeholder="Enter Weight in Kg" id="weight" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">height</label>
+    <input type="number" name="height" class="form-control" placeholder="Enter Height in Cm" id="height" aria-describedby="emailHelp">
+  </div>
+  <button type="submit" class="btn btn-primary" id="btn">Calculate</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

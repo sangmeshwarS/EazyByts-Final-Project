@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="base.html :: main(~{:: div})">
+<head>
+<meta charset="UTF-8">
+<title>Index Page</title>
+<link th:href="@{css/style.css}" rel="stylesheet" />
+</head>
+<body id="first">
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6">
+<a href="workoutPlans" class="text-secondary text-decoration-none">
+<div class="card mt-3 ">
+<div class="card-body p-0">
+<img alt="Gym" th:src="@{'/Images/gymbg.webp'}" class="" style="width: 100%;">
+</div>
+<div class="card-footer text-center">
+Workout Plans
+</div>
+</div></a>
+</div>
+
+<div class="col-md-6">
+<a href="getMeals" class="text-secondary text-decoration-none">
+<div class="card mt-3 ">
+<div class="card-body p-0">
+<img alt="Gym" th:src="@{'/Images/meaal.jpg'}" class="" style="width: 100%;">
+</div>
+<div class="card-footer text-center">
+Nutrition Tracking
+</div>
+</div></a>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

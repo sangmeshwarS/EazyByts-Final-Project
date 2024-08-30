@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="base.html :: main(~{:: div})">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="row mt-3">
+<div class="col-md-6 m-auto">
+<div class="card">
+<div class="card-header">
+<h2>Add Information</h2>
+</div>
+<div class="card-body">
+<form th:action="@{/processNutrition}" method="post">
+	<div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Calories</label>
+    <input type="text" name="calories" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Protein</label>
+    <input type="text" name="protein" class="form-control" id="exampleInputPassword1">
+  </div>
+    <div class="form-group">
+    <label for="exampleInputPassword1">Carbohydrates</label>
+    <input type="text" name="carbs" class="form-control" id="exampleInputPassword1">
+  </div>
+    <div class="form-group">
+    <label for="exampleInputPassword1">Fat</label>
+    <input type="text" name="fat" class="form-control" id="exampleInputPassword1">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="base.html :: main(~{:: div})">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container">
+<div class="row mt-3">
+<div class="col-md-12">
+<a href="pplWorkout" class="text-dark text-decoration-none">
+<div class="card mb-3" style="max-height: 200px;">
+  <div class="row no-gutters">
+    <div class="col-md-4 m-auto align-items-center">
+      <img th:src="@{/Images/gym1.jpg}" alt="gym" style="max-width: 180px;" class="rounded mx-auto d-block">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Push, Pull, Legs</h5>
+        <img alt="Arrow" class="float-right" th:src="@{/Images/chevron.png}" style="width: 80px;">
+        <p class="card-text">Push, Pull, Legs (PPL) is a popular workout routine that splits the body into three parts and trains each part on different days of the week</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</a>
+
+<a href="#" class="text-dark text-decoration-none">
+<div class="col-md-12">
+<div class="card mb-3" style="max-height: 200px;">
+  <div class="row no-gutters">
+    <div class="col-md-4 m-auto align-items-center">
+      <img th:src="@{/Images/images.jpeg}" alt="gym" style="max-width: 180px;" class="rounded mx-auto d-block">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Bro Split</h5>
+        <img alt="Arrow" class="float-right" th:src="@{/Images/chevron.png}" style="width: 80px;">
+        <p class="card-text">A bro split is a training routine that involves working out each major muscle group once a week, with the goal of full recovery before training again</p>
+        <p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</a>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="base.html :: main(~{:: div})">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container">
+<div class="row mt-3">
+
+<a href="pplWorkout" class="text-dark text-decoration-none">
+<div class="col-md-12">
+<div class="card mb-3" style="max-height: 200px;">
+  <div class="row no-gutters">
+    <div class="col-md-4 m-auto align-items-center">
+      <img th:src="@{/Images/Push.jpg}" alt="gym" style="max-width: 180px;" class="rounded mx-auto d-block">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Push</h5>
+        <img alt="Arrow" class="float-right" th:src="@{/Images/chevron.png}" style="width: 80px;">
+        <p class="card-text">A push day is a workout that focuses on the muscles in the front of your body, such as your chest, shoulders, and triceps.Push day exercises typically pushing loads away.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</a>
+
+<a href="pplWorkout" class="text-dark text-decoration-none">
+<div class="col-md-12">
+<div class="card mb-3" style="max-height: 200px;">
+  <div class="row no-gutters">
+    <div class="col-md-4 m-auto align-items-center">
+      <img th:src="@{/Images/Pull.jpg}" alt="gym" style="max-width: 180px;" class="rounded mx-auto d-block">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Pull</h5>
+        <img alt="Arrow" class="float-right" th:src="@{/Images/chevron.png}" style="width: 80px;">
+        <p class="card-text">A pull day is a gym session that focuses on pulling exercises that target the upper and lower body muscles.Pull day exercises involve pulling weights.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</a>
+
+<a href="pplWorkout" class="text-dark text-decoration-none">
+<div class="col-md-12">
+<div class="card mb-3" style="max-height: 200px;">
+  <div class="row no-gutters">
+    <div class="col-md-4 m-auto align-items-center">
+      <img th:src="@{/Images/Leg.jpg}" alt="gym" style="max-width: 180px;" class="rounded mx-auto d-block">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Legs</h5>
+        <img alt="Arrow" class="float-right" th:src="@{/Images/chevron.png}" style="width: 80px;">
+        <p class="card-text">Leg day is a day set aside for exercising your legs, and is a term used by weightlifters, bodybuilders, and other athletes to refer to their lower-body training.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</a>
+
+</div>
+</div>
+
+</body>
+</html>

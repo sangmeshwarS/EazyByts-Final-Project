@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" th:replace="base.html :: main(~{:: div})">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="row mt-3">
+<div class="col-md-8 m-auto" >
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Calories</th>
+      <th scope="col">Protein</th>
+      <th scope="col">Carbohydrates</th>
+      <th scope="col">Fat</th>
+    </tr>
+  </thead>
+  <tbody th:each="e: ${mlist}">
+    <tr>
+      <th scope="row" th:text="${e.id}"></th>
+      <td th:text="${e.name}"></td>
+      <td th:text="${e.calories}"></td>
+      <td th:text="${e.protein}"></td>
+      <td th:text="${e.carbs}"></td>
+      <td th:text="${e.fat}"></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+
+</body>
+</html>
